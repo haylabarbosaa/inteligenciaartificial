@@ -1,10 +1,9 @@
-:root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
-
+:root {
+    --cor-fundo: #F4F9FF;        /* Fundo claro para visual limpo */
+    --cor-principal: #1E3A8A;    /* Azul escuro moderno */
+    --cor-secundaria: #3B82F6;   /* Azul vibrante */
+    --cor-destaque: #FACC15;     /* Amarelo de destaque */
+    --cor-texto: #111827;        /* Texto escuro para contraste */
 }
 
 body {
@@ -14,30 +13,45 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.caixa-principal{
+.caixa-principal {
     background-color: var(--cor-principal);
+    color: #fff;
     width: 90%;
     max-width: 600px;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(30, 58, 138, 0.4);
 }
 
-h1{
+h1 {
     color: var(--cor-destaque);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
 }
 
 button {
     background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
+    color: #fff;
     border: none;
-    border-radius: 15px;
-    padding: 15px;
-    transition: background-color 0.3s;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-button:hover{
+button:hover {
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
+    transform: scale(1.05);
+}
+
+.caixa-resultado {
+    margin-top: 20px;
+    font-size: 1.1rem;
 }
