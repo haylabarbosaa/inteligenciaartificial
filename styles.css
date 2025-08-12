@@ -1,9 +1,10 @@
-:root {
-    --cor-fundo: #01080E;       /* Fundo geral bem escuro */
-    --cor-principal: #0B0D20;   /* Caixa principal */
-    --cor-secundaria: #1A1E36;  /* Botão secundário */
-    --cor-destaque: #2BDEFD;    /* Azul neon */
-    --cor-texto: #D7F9FF;       /* Texto claro */
+:root{
+    --cor-fundo: #01080E ;
+    --cor-principal: #0B0D20 ;
+    --cor-secundaria: #212333; 
+    --cor-destaque: #2BDEFD;
+    --cor-texto: #D7F9FF;
+
 }
 
 body {
@@ -13,55 +14,30 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: 'Segoe UI', sans-serif;
 }
 
-.caixa-principal {
+.caixa-principal{
     background-color: var(--cor-principal);
     width: 90%;
-    max-width: 450px;
+    max-width: 600px;
     text-align: center;
-    padding: 30px 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(43, 222, 253, 0.2);
+    padding: 20px;
 }
 
-h1 {
+h1{
     color: var(--cor-destaque);
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-.caixa-perguntas {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
 }
 
 button {
-    display: block;
-    width: 100%;
-    margin: 8px 0;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-button:first-of-type {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
 }
 
-button:last-of-type {
-    background-color: var(--cor-destaque);
+button:hover{
+    background-color: var(verde);
     color: var(--cor-principal);
-    font-weight: bold;
-}
-
-button:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 10px rgba(43, 222, 253, 0.4);
 }
