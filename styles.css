@@ -1,9 +1,9 @@
 :root {
-    --cor-fundo: #F4F9FF;        /* Fundo claro para visual limpo */
-    --cor-principal: #1E3A8A;    /* Azul escuro moderno */
-    --cor-secundaria: #3B82F6;   /* Azul vibrante */
-    --cor-destaque: #FACC15;     /* Amarelo de destaque */
-    --cor-texto: #111827;        /* Texto escuro para contraste */
+    --cor-fundo: #01080E;       /* Fundo geral bem escuro */
+    --cor-principal: #0B0D20;   /* Caixa principal */
+    --cor-secundaria: #1A1E36;  /* Botão secundário */
+    --cor-destaque: #2BDEFD;    /* Azul neon */
+    --cor-texto: #D7F9FF;       /* Texto claro */
 }
 
 body {
@@ -13,45 +13,55 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .caixa-principal {
     background-color: var(--cor-principal);
-    color: #fff;
     width: 90%;
-    max-width: 600px;
+    max-width: 450px;
     text-align: center;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(30, 58, 138, 0.4);
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(43, 222, 253, 0.2);
 }
 
 h1 {
     color: var(--cor-destaque);
-    margin-bottom: 20px;
     font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.caixa-perguntas {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 button {
-    background-color: var(--cor-secundaria);
-    color: #fff;
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px;
     border: none;
-    border-radius: 12px;
-    padding: 15px 20px;
-    margin: 10px;
+    border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-button:hover {
-    background-color: var(--cor-destaque);
-    color: var(--cor-principal);
-    transform: scale(1.05);
+button:first-of-type {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
 }
 
-.caixa-resultado {
-    margin-top: 20px;
-    font-size: 1.1rem;
+button:last-of-type {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(43, 222, 253, 0.4);
 }
